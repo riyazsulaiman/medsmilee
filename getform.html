@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+           form{
+           	margin-left: 180px;
+           	margin-right: 380px;
+       } 
+        </style>
+    </head>
+    <body style="background-color:#00a62c">
+        <div class="container"><h1>Fill Out The Fields</h1>
+        <form action="http://localhost:5000/login" method="GET" > 
+            <div class="form-group" class="text-primary">
+                <label>Name:</label><br>
+                <input type="Text" placeholder="FULLNAME" name="name" id="n" required class="form-control"><br>
+                <label>RollNumber:</label><br>
+                <input type="text" placeholder="Ex:17CSR083" name="roll" required class="form-control"><br>
+                <label>Year:</label><br>
+                <input type="number" value="" required name="year" class="form-control"><br>
+                <label>Department:</label><br>
+                <input type="text" placeholder="Department" name="dept" class="form-control"><br>
+                <label>Project Presented:</label><br>
+                <input type="text" placeholder="Project Title" name="paper" class="form-control"><br>
+                <label>Paper Presented:</label><br>
+                <input type="text" placeholder="Project Title" name="project" class="form-control"><br>
+                <label>Arrears:</label><br>
+                <input type="number" name="arr" class="form-control"><br>
+               <button class="btn-primary" type="SUBMIT" style="padding:10px;">SUBMIT</button>
+        </div>
+        </form>
+        </div>
+    </body>
+</html>
